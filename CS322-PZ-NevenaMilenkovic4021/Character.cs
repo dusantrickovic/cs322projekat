@@ -1,17 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using MySql.Data.MySqlClient;
 
 namespace CS322_PZ_NevenaMilenkovic4021
 {
     public partial class Character : Form
     {
+        MySqlConnection conn = new MySqlConnection("server=localhost;port=3306;user=root;password='';database=cs322");
         public Character()
         {
             InitializeComponent();
@@ -25,9 +18,20 @@ namespace CS322_PZ_NevenaMilenkovic4021
 
         private void btn_start_adventure_Click(object sender, EventArgs e)
         {
+            string sql = "INSERT INTO player (name, race) VALUES ('Nevena', 'Human')";
+            MySqlCommand cmd = new MySqlCommand(sql, conn);
+            MySqlDataReader rdr = cmd.ExecuteReader();
+
+            rdr.Close();
+
             this.Hide();
             Game game = new Game();
             game.Show();
+        }
+
+        private void Character_Load(object sender, EventArgs e)
+        {
+                conn.Open();
         }
     }
 }

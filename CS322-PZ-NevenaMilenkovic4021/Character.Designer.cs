@@ -45,18 +45,18 @@
             this.lbl_name.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbl_name.Font = new System.Drawing.Font("Xolonium", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbl_name.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lbl_name.Location = new System.Drawing.Point(52, 32);
+            this.lbl_name.Location = new System.Drawing.Point(59, 43);
             this.lbl_name.Name = "lbl_name";
-            this.lbl_name.Size = new System.Drawing.Size(115, 39);
+            this.lbl_name.Size = new System.Drawing.Size(144, 48);
             this.lbl_name.TabIndex = 0;
             this.lbl_name.Text = "Name";
             // 
             // lbl_race_info
             // 
             this.lbl_race_info.AutoSize = true;
-            this.lbl_race_info.Location = new System.Drawing.Point(501, 50);
+            this.lbl_race_info.Location = new System.Drawing.Point(573, 67);
             this.lbl_race_info.Name = "lbl_race_info";
-            this.lbl_race_info.Size = new System.Drawing.Size(59, 15);
+            this.lbl_race_info.Size = new System.Drawing.Size(74, 20);
             this.lbl_race_info.TabIndex = 1;
             this.lbl_race_info.Text = "Race info:";
             // 
@@ -67,9 +67,9 @@
             this.lbl_race.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbl_race.Font = new System.Drawing.Font("Xolonium", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbl_race.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lbl_race.Location = new System.Drawing.Point(52, 87);
+            this.lbl_race.Location = new System.Drawing.Point(59, 116);
             this.lbl_race.Name = "lbl_race";
-            this.lbl_race.Size = new System.Drawing.Size(102, 39);
+            this.lbl_race.Size = new System.Drawing.Size(127, 48);
             this.lbl_race.TabIndex = 2;
             this.lbl_race.Text = "Race";
             // 
@@ -80,9 +80,10 @@
             this.btn_start_adventure.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_start_adventure.Font = new System.Drawing.Font("Xolonium", 47.99999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_start_adventure.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btn_start_adventure.Location = new System.Drawing.Point(84, 477);
+            this.btn_start_adventure.Location = new System.Drawing.Point(96, 636);
+            this.btn_start_adventure.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_start_adventure.Name = "btn_start_adventure";
-            this.btn_start_adventure.Size = new System.Drawing.Size(627, 72);
+            this.btn_start_adventure.Size = new System.Drawing.Size(717, 96);
             this.btn_start_adventure.TabIndex = 3;
             this.btn_start_adventure.Text = "Start adventure";
             this.btn_start_adventure.UseVisualStyleBackColor = false;
@@ -90,9 +91,10 @@
             // 
             // txt_name
             // 
-            this.txt_name.Location = new System.Drawing.Point(182, 47);
+            this.txt_name.Location = new System.Drawing.Point(208, 63);
+            this.txt_name.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_name.Name = "txt_name";
-            this.txt_name.Size = new System.Drawing.Size(121, 23);
+            this.txt_name.Size = new System.Drawing.Size(138, 27);
             this.txt_name.TabIndex = 4;
             // 
             // btn_dice
@@ -102,9 +104,10 @@
             this.btn_dice.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_dice.FlatAppearance.BorderSize = 0;
             this.btn_dice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_dice.Location = new System.Drawing.Point(328, 37);
+            this.btn_dice.Location = new System.Drawing.Point(375, 49);
+            this.btn_dice.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_dice.Name = "btn_dice";
-            this.btn_dice.Size = new System.Drawing.Size(40, 41);
+            this.btn_dice.Size = new System.Drawing.Size(46, 55);
             this.btn_dice.TabIndex = 5;
             this.btn_dice.Text = " ";
             this.btn_dice.UseVisualStyleBackColor = false;
@@ -113,17 +116,18 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(182, 102);
+            this.comboBox1.Location = new System.Drawing.Point(208, 136);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 23);
+            this.comboBox1.Size = new System.Drawing.Size(138, 28);
             this.comboBox1.TabIndex = 6;
             // 
             // Character
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CS322_PZ_NevenaMilenkovic4021.Properties.Resources.bg;
-            this.ClientSize = new System.Drawing.Size(784, 561);
+            this.ClientSize = new System.Drawing.Size(896, 748);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.btn_dice);
             this.Controls.Add(this.txt_name);
@@ -133,8 +137,10 @@
             this.Controls.Add(this.lbl_name);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Character";
             this.Text = "Character";
+            this.Load += new System.EventHandler(this.Character_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
