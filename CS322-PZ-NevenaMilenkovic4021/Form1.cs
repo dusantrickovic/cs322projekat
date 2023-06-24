@@ -21,6 +21,8 @@ namespace CS322_PZ_NevenaMilenkovic4021
         }
         private void Game_Load(object sender, EventArgs e)
         {
+            pb_env.SizeMode = PictureBoxSizeMode.StretchImage;
+
             MyText.LoadLanguage(new English());
 
             Utils.ReadFile("./welcome.txt", lb_game);
@@ -50,13 +52,14 @@ namespace CS322_PZ_NevenaMilenkovic4021
             lastRoom = null;
 
             lb_game.Items.Add(house.CurrentRoom.ToString());
+            Utils.ChangeEnvironment(house.CurrentRoom.ToString(), pb_env);
 
             lb_game.Items.Add(MyText.Language.WhatToDo);
         }
 
         private void txt_command_KeyDown(object sender, KeyEventArgs e)
         {
-            if(e.KeyCode == Keys.Enter)
+            if (e.KeyCode == Keys.Enter)
             {
                 input = txt_command.Text.ToLower();
 

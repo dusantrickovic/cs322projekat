@@ -40,10 +40,9 @@
             this.btn_quit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_quit.Font = new System.Drawing.Font("Xolonium", 47.99999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_quit.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btn_quit.Location = new System.Drawing.Point(444, 615);
-            this.btn_quit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_quit.Location = new System.Drawing.Point(463, 550);
             this.btn_quit.Name = "btn_quit";
-            this.btn_quit.Size = new System.Drawing.Size(343, 116);
+            this.btn_quit.Size = new System.Drawing.Size(300, 87);
             this.btn_quit.TabIndex = 0;
             this.btn_quit.Text = "QUIT";
             this.btn_quit.UseVisualStyleBackColor = false;
@@ -56,10 +55,9 @@
             this.btn_play.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_play.Font = new System.Drawing.Font("Xolonium", 47.99999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_play.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btn_play.Location = new System.Drawing.Point(444, 446);
-            this.btn_play.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_play.Location = new System.Drawing.Point(463, 407);
             this.btn_play.Name = "btn_play";
-            this.btn_play.Size = new System.Drawing.Size(343, 113);
+            this.btn_play.Size = new System.Drawing.Size(300, 85);
             this.btn_play.TabIndex = 1;
             this.btn_play.Text = "PLAY";
             this.btn_play.UseVisualStyleBackColor = false;
@@ -67,16 +65,15 @@
             // 
             // Menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CS322_PZ_NevenaMilenkovic4021.Properties.Resources.main;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1182, 853);
+            this.ClientSize = new System.Drawing.Size(1184, 861);
             this.Controls.Add(this.btn_play);
             this.Controls.Add(this.btn_quit);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Menu";
             this.Text = "Menu";
             this.ResumeLayout(false);

@@ -41,11 +41,37 @@ namespace CS322_PZ_NevenaMilenkovic4021
                 string path = "./normal.png";
                 pb.Image = Image.FromFile(path);
             } 
+            else if (desc.Contains("cold"))
+            {
+                string path = "./cold.png";
+                pb.Image = Image.FromFile(path);
+            }
+            else if (desc.Contains("warm"))
+            {
+                string path = "./hot.png";
+                pb.Image = Image.FromFile(path);
+            }
+            else if (desc.Contains("dark"))
+            {
+                string path = "./dark.png";
+                pb.Image = Image.FromFile(path);
+            }
+            else if (desc.Contains("bright"))
+            {
+                string path = "./bright.png";
+                pb.Image = Image.FromFile(path);
+            }
+            else if (desc.Contains("ruined"))
+            {
+                string path = "./ruined.png";
+                pb.Image = Image.FromFile(path);
+            }
             else if (desc.Contains("ominous"))
             {
                 string path = "./ominous.png";
                 pb.Image = Image.FromFile(path);
-            } else
+            }
+            else
             {
                 string path = "./gorktheorc.png";
                 pb.Image = Image.FromFile(path);

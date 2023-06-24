@@ -1,21 +1,21 @@
-                                            _______________________
-   _______________________-------------------                       `\
- /:--__                                                              |
-||< > |                                   ___________________________/
-| \__/_________________-------------------                         |
-|                                                                  |
- |                       WELCOME TO GORK                           |
- |                                                                  |
- |       Gork is a text adventure game. Text game is a game         |
-  |              which is played by typing commands.                |
-  |                                                                  |
-  |        To do an action type [action noun] in the console         |
-  |                with just a space between two words.              |
-   |                                                                  |
-   |                  For list of all commands type                   |
-   |                           >>help                                |
-  |                                              ____________________|_
-  |  ___________________-------------------------                      `\
-  |/`--_                                                                 |
-  ||[ ]||                                            ___________________/
-   \===/___________________--------------------------
+                                         ___________________
+   ____________________-----------------                    `\
+ /:--__                                                       |
+||< > |                               _______________________/
+| \__/______________-----------------                      |
+|                                                          |
+ |                     WELCOME TO GORK                     |
+ |                                                          |
+ |    Gork is a text adventure game. Text game is a game    |
+  |          which is played by typing commands.            |
+  |                                                          |
+  |     To do an action type [action noun] in the console    |
+  |            with just a space between two words.          |
+   |                                                         |
+   |               For list of all commands type              |
+   |                           >>help                         |
+  |                                         __________________|_
+  |  ___________________-------------------                     `\
+  |/`--_                                                          |
+  ||[ ]||                                       _________________/
+   \===/___________________--------------------
