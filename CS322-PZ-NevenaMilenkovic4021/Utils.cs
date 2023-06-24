@@ -33,5 +33,23 @@ namespace CS322_PZ_NevenaMilenkovic4021
                 br++;
             }
         }
+
+        public static void ChangeEnvironment(string desc, PictureBox pb)
+        {
+            if(desc.Contains("normal"))
+            {
+                string path = "./normal.png";
+                pb.Image = Image.FromFile(path);
+            } 
+            else if (desc.Contains("ominous"))
+            {
+                string path = "./ominous.png";
+                pb.Image = Image.FromFile(path);
+            } else
+            {
+                string path = "./gorktheorc.png";
+                pb.Image = Image.FromFile(path);
+            }
+        }
     }
 }

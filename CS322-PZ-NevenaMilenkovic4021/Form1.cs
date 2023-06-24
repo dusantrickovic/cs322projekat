@@ -60,6 +60,8 @@ namespace CS322_PZ_NevenaMilenkovic4021
             {
                 input = txt_command.Text.ToLower();
 
+                lb_game.Items.Add(string.Format(">> " + input));
+
                 if (input == MyText.Language.Quit)
                     Application.Exit();
                 else
@@ -71,11 +73,12 @@ namespace CS322_PZ_NevenaMilenkovic4021
                     lastRoom = house.CurrentRoom;
                 }
 
+                Utils.ChangeEnvironment(house.CurrentRoom.ToString(), pb_env);
+
                 lb_game.Items.Add(MyText.Language.WhatToDo);
 
                 txt_command.Clear();
             }
         }
-
     }
 }

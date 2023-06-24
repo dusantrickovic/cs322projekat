@@ -18,7 +18,7 @@ namespace CS322_PZ_NevenaMilenkovic4021
 
         private void btn_start_adventure_Click(object sender, EventArgs e)
         {
-            string sql = "INSERT INTO player (name, race) VALUES ('Nevena', 'Human')";
+            string sql = "INSERT INTO player (name, race) VALUES ('Ryven', 'Aasimar')";
             MySqlCommand cmd = new MySqlCommand(sql, conn);
             MySqlDataReader rdr = cmd.ExecuteReader();
 
